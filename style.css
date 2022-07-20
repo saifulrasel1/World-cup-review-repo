@@ -148,7 +148,7 @@ main {
   /* media query */
   @media screen and (max-width:688px){
     .container{
-        padding-top:px;
+        padding-top:10px;
     }
     .container-childs{
         display:flex;
@@ -189,9 +189,11 @@ main {
     display:grid;
     grid-template-columns: repeat(1,1fr);
 }
-.unorderlist >li{
-    display:inline;
+.unorderlist{
+    display:flex;
+    flex-direction: column;
 }
+
 
   }
   /* tablet site */
