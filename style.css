@@ -213,7 +213,9 @@ main {
         display:grid;
         grid-template-columns: repeat(2,1fr);
     }
-   
+    .unorderlist{
+        padding-bottom:3rem;
+    }
   }
 
   
