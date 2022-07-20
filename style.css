@@ -143,7 +143,15 @@ main {
         color:whitesmoke;
         font-size:12px;
     }
-
+    .footer-icon{
+        margin-left:35%;
+    }
+    .footer-icon a{
+       text-decoration: none;
+       color:rgb(121, 79, 24);
+       font-size:1em;
+       margin-left:30px;
+    }
 
   /* media query */
   @media screen and (max-width:688px){
@@ -193,7 +201,14 @@ main {
     display:flex;
     flex-direction: column;
 }
-
+.footer-icon{
+    display:flex;
+    font-size: 12px;
+    align-items:center;
+    justify-content: center;
+    margin:0 auto;
+    padding-bottom:15px;
+}
 
   }
   /* tablet site */
@@ -217,6 +232,9 @@ main {
     }
     .unorderlist{
         padding-bottom:3rem;
+    }
+    .footer-icon{
+        display:none;
     }
   }
 
