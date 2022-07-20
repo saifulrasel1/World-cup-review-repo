@@ -190,9 +190,34 @@ main {
     grid-template-columns: repeat(1,1fr);
 }
 .unorderlist >li{
-    display:block;
+    display:inline;
 }
 
+  }
+  /* tablet site */
+  @media screen and (min-width:689px) and (max-width:992px){
+    
+    .flex-wrapper{
+        display:flex;
+        flex-direction: column;
+    }
+    .container-two-button{
+        width:100%;
+        height:100px;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-bottom:30px;
+        background-color: transparent;
+    }
+    .blogs{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    footer{
+        display:flex;
+        justify-content: ;
+    }
+   
   }
 
   
