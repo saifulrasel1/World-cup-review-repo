@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upcoming match</title>
+    
+    <!-- stylesheet  -->
+    <style>
+        /* common style */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header section */
+.container{
+    display:flex;
+    width:100%;
+    margin:0 auto;
+    justify-content: center;
+    align-items:center;
+    padding-top:40px;
+}
+.container-childs{
+    display:flex;
+    align-items: center;
+    width:90%;
+    background-color:#1E1E1E;
+    padding:15px;
+    justify-content:space-evenly;
+    border-radius:10px;
+}
+.container-text{
+    width:45%;
+}
+.container-thumbnail{
+    width:45%;
+}
+.container-thumbnail img{
+    width:90%;
+}
+.heading{
+    font-size:2.5em;
+    color:aliceblue;
+}
+.paragraph{
+    color:white;
+}
+.btn{
+    color: antiquewhite;
+    font-size:12px;
+    background-color:rgb(179, 4, 4);
+    border:1px solid black;
+    padding:7px 14px;
+    margin-top:7px;
+    border-radius:5px;
+}
+
+/* main section */
+
+main {
+    margin-top: 5rem;
+}
+ .container-two{
+    width:90%;
+    margin: 0 auto;
+ }
+
+.flex-wrapper{
+    display:flex;
+}
+
+ .container-two-button{
+    width:252px;
+    height:220px;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    background-color:#1E1E1E;
+ }
+ .container-two-button > button{
+    width:90%;
+    margin:3% 5%;
+    padding:18px 0 ;
+    background-color:white;
+    color:black;
+    font-weight:bold;
+    font-size:1em;
+    border-radius:10px;
+ }
+ #type{
+    background-color: red;
+ }
+
+ /* grid section */
+ /* website 2 */
+ 
+ .blogs {
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:2rem;
+}
+ .blog{
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+   justify-content:center;
+   box-shadow:5px 5px 20px gray;
+   border-radius:10px;
+   padding:15px;
+ }
+ .blog-thumbnail-1{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom:15px;
+ }
+ .blog-text{
+    line-height: 1.8em;
+ }
+.blog-thumbnail-1 img{
+    width:100%;
+}
+ /* footer section */
+    footer{
+        background-color: black;
+        margin-top:30px;
+        padding:5px;
+        
+    }
+   
+    .footer-heading{
+            color:white;
+            text-align:center;
+            margin:40px 0px;
+    }
+    .unorderlist{
+        padding-bottom:20px;
+        text-align: center;
+    }
+    ul li {
+        display:inline-block;
+        margin-left: 40px;
+       
+    }
+    ul li a{
+        text-decoration: none;
+        color:whitesmoke;
+        font-size:12px;
+    }
+    .footer-icon{
+        display:flex;
+        flex-direction: row;
+        margin:0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-icon a{
+       text-decoration: none;
+       color:rgb(121, 79, 24);
+       font-size:1em;
+       margin-left:30px;
+    }
+
+  /* media query */
+  @media screen and (max-width:688px){
+    .container{
+        padding-top:10px;
+    }
+    .container-childs{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .container-text, .container-thumbnail{
+        width:100%;
+    }
+    .heading{
+        line-height:0.85;
+        padding-bottom:20px;
+    }
+    .btn{
+        font-size:1.5em;        
+        padding:10px 16px;
+        margin-bottom:20px;
+    }
+    .flex-wrapper{
+        display:flex;
+        flex-direction:column;
+        align-items: center;   
+    }
+    .container-two-button{
+     width:100%;
+     height:auto;
+     font-size:2em;
+     background-color: transparent;
+     display:flex;
+     align-items:center;
+
+  }
+  .blogs{
+    width:100%;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.unorderlist{
+    display:flex;
+    flex-direction: column;
+}
+.footer-icon{
+    display:flex;
+    font-size: 12px;
+    align-items:center;
+    justify-content: center;
+    margin:0 auto;
+    padding-bottom:15px;
+}
+
+  }
+  /* tablet site */
+  @media screen and (min-width:689px) and (max-width:992px){
+    
+    .flex-wrapper{
+        display:flex;
+        flex-direction: column;
+    }
+    .container-two-button{
+        width:100%;
+        height:100px;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-bottom:30px;
+        background-color: transparent;
+    }
+    .blogs{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .unorderlist{
+        padding-bottom:3rem;
+    }
+    .footer-icon{
+        display:none;
+    }
+  }
+
+  
+    </style>
+
+
+</head>
+<body>
+        <!-- start header part -->
+        <header>
+            <div class="container">
+                <div class="container-childs">
+                    <div class="container-text">
+                        <h1  class="heading">The Greatest show on the earth</h1>
+                        <p class="paragraph">this player name is marcelo.he is one of the good player in the world.he is from Brazil.and now playing in Real-Madrid</p>
+                        <button class="btn">Watch live <i class="fa-solid fa-circle-arrow-right"></i></button>
+                    </div>
+                    <div class="container-thumbnail">
+                        <img src="assets/Banner Image.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header part -->
+    
+        <!-- start main section -->
+          <main>
+             <section class="container-two">
+                <div class="flex-wrapper">
+                    <div class="container-two-button">
+                            <button>Upcoming Match</button>
+                            <button>All Group</button>
+                            <button id="type">Blog</button>
+                    </div>
+                    <div class="blogs">
+                        <div class="blog">
+                            <div class="blog-thumbnail-1">
+                                <img src="assets/germany Flag.png" alt="">
+                                <div class="vs"><h2>vs</h2></div>
+                                <img src="assets/Flag.png" alt="">
+                            </div>
+                            <div class="blog-text">
+                                    <h3>Germany vs France</h3>
+                                    <span>April 01,</span>
+                                    <span>2023,</span>
+                                    <span> 1.00Am</span>
+                            </div>
+                        </div>
+                        <div class="blog">
+                            <div class="blog-thumbnail-1">
+                                <img src="assets/germany Flag.png" alt="">
+                                <div class="vs"><h2>vs</h2></div>
+                                <img src="assets/Flag.png" alt="">
+                            </div>
+                            <div class="blog-text">
+                                    <h3>Germany vs France</h3>
+                                    <span>April 01,</span>
+                                    <span>2023,</span>
+                                    <span> 1.00Am</span>
+                            </div>
+                        </div>
+                        <div class="blog">
+                            <div class="blog-thumbnail-1">
+                                <img src="assets/germany Flag.png" alt="">
+                                <div class="vs"><h2>vs</h2></div>
+                                <img src="assets/Flag.png" alt="">
+                            </div>
+                            <div class="blog-text">
+                                    <h3>Germany vs France</h3>
+                                    <span>April 01,</span>
+                                    <span>2023,</span>
+                                    <span> 1.00Am</span>
+                            </div>
+                        </div>
+                        <div class="blog">
+                            <div class="blog-thumbnail-1">
+                                <img src="assets/germany Flag.png" alt="">
+                                <div class="vs"><h2>vs</h2></div>
+                                <img src="assets/Flag.png" alt="">
+                            </div>
+                            <div class="blog-text">
+                                    <h3>Germany vs France</h3>
+                                    <span>April 01,</span>
+                                    <span>2023,</span>
+                                    <span> 1.00Am</span>
+                            </div>
+                        </div>
+                        <div class="blog">
+                            <div class="blog-thumbnail-1">
+                                <img src="assets/germany Flag.png" alt="">
+                                <div class="vs"><h2>vs</h2></div>
+                                <img src="assets/Flag.png" alt="">
+                            </div>
+                            <div class="blog-text">
+                                    <h3>Germany vs France</h3>
+                                    <span>April 01,</span>
+                                    <span>2023,</span>
+                                    <span> 1.00Am</span>
+                            </div>
+                        </div>
+                        <div class="blog">
+                            <div class="blog-thumbnail-1">
+                                <img src="assets/germany Flag.png" alt="">
+                                <div class="vs"><h2>vs</h2></div>
+                                <img src="assets/Flag.png" alt="">
+                            </div>
+                            <div class="blog-text">
+                                    <h3>Germany vs France</h3>
+                                    <span>April 01,</span>
+                                    <span>2023,</span>
+                                    <span> 1.00Am</span>
+                            </div>
+                        </div>
+                        <div class="blog">
+                            <div class="blog-thumbnail-1">
+                                <img src="assets/germany Flag.png" alt="">
+                                <div class="vs"><h2>vs</h2></div>
+                                <img src="assets/Flag.png" alt="">
+                            </div>
+                            <div class="blog-text">
+                                    <h3>Germany vs France</h3>
+                                    <span>April 01,</span>
+                                    <span>2023,</span>
+                                    <span> 1.00Am</span>
+                            </div>
+                        </div>
+                        <div class="blog">
+                            <div class="blog-thumbnail-1">
+                                <img src="assets/germany Flag.png" alt="">
+                                <div class="vs"><h2>vs</h2></div>
+                                <img src="assets/Flag.png" alt="">
+                            </div>
+                            <div class="blog-text">
+                                    <h3>Germany vs France</h3>
+                                    <span>April 01,</span>
+                                    <span>2023,</span>
+                                    <span> 1.00Am</span>
+                            </div>
+                        </div>
+                        <div class="blog">
+                            <div class="blog-thumbnail-1">
+                                <img src="assets/germany Flag.png" alt="">
+                                <div class="vs"><h2>vs</h2></div>
+                                <img src="assets/Flag.png" alt="">
+                            </div>
+                            <div class="blog-text">
+                                    <h3>Germany vs France</h3>
+                                    <span>April 01,</span>
+                                    <span>2023,</span>
+                                    <span> 1.00Am</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </section>
+          </main>
+        <!-- end main section -->
+    
+        <!-- footer section -->
+        <footer>
+            <h1  class="footer-heading" style="color:white;">Goal</h1>
+            <hr id="horizontal">
+            <ul class="unorderlist">
+                <li><a href="#">contact us</a></li>
+                <li><a href="#">Terms 0f service</a></li>
+                <li><a href="#">Privacy settting</a></li>
+                <li><a href="#">Goal appp</a></li>
+                <li><a href="#">Goal live</a></li>
+            </ul>
+                <span class="footer-icon"><a href="https://www.google.com/">Google</a>
+                    <a href="https://www.youtube.com/">youtube</a>
+                    <a href="https://fontawesome.com/">Font awesome</a>
+                </span>
+        </footer>
+</body>
+</html>
